@@ -1,0 +1,67 @@
+﻿{
+  "register": {
+    "title": "Đăng ký tài khoản",
+    "userName": "Tên đăng nhập",
+    "email": "E-mail",
+    "fullName": "Họ và tên",
+    "dob": "Ngày sinh",
+    "gender": "Giới tính",
+    "male": "Nam",
+    "female": "Nữ",
+    "role": "Loại tài khoản",
+    "admin": "Quản trị viên",
+    "staff": "Nhân viên",
+    "phoneNumber": "Số điện thoại",
+    "password": "Mật khẩu",
+    "passwordConfirm": "Xác nhận mật khẩu",
+    "submit": "Đăng ký",
+    "success": "I0001: Đăng ký thành công!",
+    "error": "I0002: Đăng ký thất bại!"
+  },
+  "userEdit": {
+    "title": "Chỉnh sửa người dùng",
+    "userName": "Tên đăng nhập",
+    "email": "E-mail",
+    "fullName": "Họ và tên",
+    "dob": "Ngày sinh",
+    "gender": "Giới tính",
+    "phoneNumber": "Số điện thoại",
+    "description": "Mô tả",
+    "role": "Loại tài khoản",
+    "male": "Nam",
+    "female": "Nữ",
+    "admin": "Quản trị viên",
+    "staff": "Nhân viên",
+    "save": "Lưu"
+  },
+  "userList": {
+    "title": "Danh sách người dùng",
+    "userName": "Tên đăng nhập",
+    "fullName": "Họ và tên",
+    "role": "Loại tài khoản",
+    "dob": "Ngày sinh",
+    "actions": "Hoạt động",
+    "edit": "Chỉnh sửa",
+    "delete": "Xóa",
+    "confirmDelete": "Bạn có chắc muốn xóa người dùng này?",
+    "search": "Tìm kiếm",
+    "confirm": "Xác nhận",
+    "cancel": "Hủy",
+    "noResults": "Không tìm thấy người dùng nào."
+  },
+  "confirmPasswordCode": {
+    "title": "Xác thực mã xác thực",
+    "passwordCode": "Mã xác thực",
+    "submit": "Xác thực"
+  },
+  "forgotPassword": {
+    "title": "Quên mật khẩu",
+    "email": "E-mail",
+    "submit": "Gửi yêu cầu"
+  },
+  "login": {
+    "title": "Đăng nhập",
+    "email" :"E-mail",
+    "password": "Mật khẩu"
+  } 
+}
