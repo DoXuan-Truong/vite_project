@@ -3,12 +3,18 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Container } from "@mui/material";
 
 // Import các màn hình
-import RegisterPage from "./pages/RegisterPage";
-import LoginPage from "./pages/LoginPage";
-import ForgotPasswordPage from "./pages/ForgotPasswordPage";
-import ConfirmPasswordCodePage from "./pages/ConfirmPasswordCodePage";
-import UserListPage from "./pages/UserListPage";
-import UserEditPage from "./pages/UserEditPage";
+// import RegisterPage from "./pages/RegisterPage";
+import RegisterPage from "./pages/Register/RegisterPage.jsx";
+// import LoginPage from "./pages/LoginPage";
+import LoginPage from "./pages/Login/LoginPage.jsx";
+// import ForgotPasswordPage from "./pages/ForgotPasswordPage";
+import ForgotPasswordPage from "./pages/ForgotPassword/ForgotPasswordPage.jsx";
+// import ConfirmPasswordCodePage from "./pages/ConfirmPasswordCodePage";
+import ConfirmPasswordCodePage from "./pages/ConfirmPasswordCode/ConfirmPasswordCodePage.jsx";
+// import UserListPage from "./pages/UserListPage";
+import UserListPage from "./pages/UserList/UserListPage.jsx";
+// import UserEditPage from "./pages/UserEditPage";
+import UserEditPage from "./pages/UserEdit/UserEditPage.jsx";
 import ProtectedRoute from "./components/ProtectedRoute";
 import PublicRoute from "./components/PublicRoute";
 import RegisterRoute from "./components/RegisterRoute";
@@ -18,8 +24,7 @@ function App() {
       <Container maxWidth="lg">
         <Routes>
           {/* Màn hình đăng ký */}
-          <Route path="/register" element={
-              <RegisterRoute>
+          <Route path="/register" element={<RegisterRoute>
           <RegisterPage />
           </RegisterRoute>}
           />
