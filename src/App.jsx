@@ -11,7 +11,7 @@ import UserListPage from "./pages/UserListPage";
 import UserEditPage from "./pages/UserEditPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import PublicRoute from "./components/PublicRoute";
-import RegisterRoute from "./components/RegisterRoute.jsx";
+import RegisterRoute from "./components/RegisterRoute";
 function App() {
   return (
     <Router>

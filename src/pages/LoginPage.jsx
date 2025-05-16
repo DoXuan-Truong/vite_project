@@ -33,8 +33,8 @@ export default function LoginPage() {
 
       const result = await login(data);
       const currentUser  = JSON.parse(localStorage.getItem('user'));
-      console.log("Login result:", result);
-      console.log("User role:", currentUser ?.role);
+      // console.log("Login result:", result);
+      // console.log("User role:", currentUser ?.role);
       // Điều hướng theo role
       if (currentUser ?.role === '1' || currentUser ?.role === '2') {
         navigate("/users");
@@ -96,6 +96,15 @@ export default function LoginPage() {
             fullWidth
             sx={{ mt: 2 }}>
             {t("login.title")}
+          </Button>
+          <Button
+              variant="contained"
+              color=""
+              fullWidth
+              sx={{ mt: 2 }}
+              onClick={() => navigate("/forgot-password")}
+          >
+            Quên mật khẩu
           </Button>
           <Button
               variant="contained"

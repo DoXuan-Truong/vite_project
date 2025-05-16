@@ -24,8 +24,6 @@ export const login = async ({ email, password }) => {
     localStorage.setItem("accessToken", token);
     const user = getUserFromToken(token);
     localStorage.setItem('user', JSON.stringify(user));
-    console.log("LOG user",user);
-    // console.log(response.data.data.accessToken)
     return response.data;
 };
 

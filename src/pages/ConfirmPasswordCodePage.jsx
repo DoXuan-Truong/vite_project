@@ -7,7 +7,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import {confirmPassword} from "../api/api.jsx";
 
-// 📌 Schema xác thực
+// Schema xác thực
 const schema = yup.object().shape({
   passwordCode: yup
     .string()

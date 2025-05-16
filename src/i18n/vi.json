@@ -1,67 +1,76 @@
 ﻿{
+  "login": {
+    "title": "Đăng nhập",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "button": "Đăng nhập",
+    "forgot": "Quên mật khẩu?"
+  },
   "register": {
-    "title": "Đăng ký tài khoản",
+    "title": "Đăng ký",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "passwordConfirm": "Xác nhận mật khẩu",
     "userName": "Tên đăng nhập",
-    "email": "E-mail",
     "fullName": "Họ và tên",
     "dob": "Ngày sinh",
+    "phoneNumber": "Số điện thoại",
     "gender": "Giới tính",
     "male": "Nam",
     "female": "Nữ",
-    "role": "Loại tài khoản",
+    "role": "Vai trò",
     "admin": "Quản trị viên",
     "staff": "Nhân viên",
-    "phoneNumber": "Số điện thoại",
-    "password": "Mật khẩu",
-    "passwordConfirm": "Xác nhận mật khẩu",
-    "submit": "Đăng ký",
-    "success": "I0001: Đăng ký thành công!",
-    "error": "I0002: Đăng ký thất bại!"
+    "submit": "Đăng ký"
+  },
+  "confirmPasswordCode": {
+    "title": "Xác thực mã",
+    "passwordCode": "Mã xác thực",
+    "submit": "Xác nhận",
+    "required": "Vui lòng nhập mã xác thực",
+    "invalidLength": "Mã xác thực phải có 4 ký tự"
+  },
+  "forgotPassword": {
+    "title": "Quên mật khẩu",
+    "submit": "Gửi yêu cầu"
   },
   "userEdit": {
     "title": "Chỉnh sửa người dùng",
-    "userName": "Tên đăng nhập",
-    "email": "E-mail",
     "fullName": "Họ và tên",
     "dob": "Ngày sinh",
     "gender": "Giới tính",
-    "phoneNumber": "Số điện thoại",
-    "description": "Mô tả",
-    "role": "Loại tài khoản",
     "male": "Nam",
     "female": "Nữ",
+    "phoneNumber": "Số điện thoại",
+    "description": "Mô tả",
+    "role": "Vai trò",
     "admin": "Quản trị viên",
     "staff": "Nhân viên",
-    "save": "Lưu"
+    "save": "Lưu",
+    "requiredDob": "Ngày sinh là bắt buộc",
+    "requiredGender": "Giới tính là bắt buộc",
+    "requiredRole": "Vai trò là bắt buộc",
+    "descriptionRequired": "Mô tả là bắt buộc"
   },
   "userList": {
     "title": "Danh sách người dùng",
     "userName": "Tên đăng nhập",
     "fullName": "Họ và tên",
-    "role": "Loại tài khoản",
     "dob": "Ngày sinh",
-    "actions": "Hoạt động",
-    "edit": "Chỉnh sửa",
-    "delete": "Xóa",
-    "confirmDelete": "Bạn có chắc muốn xóa người dùng này?",
+    "role": "Vai trò",
     "search": "Tìm kiếm",
+    "edit": "Sửa",
+    "delete": "Xóa",
+    "actions": "Hành động",
+    "confirmDelete": "Bạn có chắc muốn xóa người dùng này?",
     "confirm": "Xác nhận",
-    "cancel": "Hủy",
-    "noResults": "Không tìm thấy người dùng nào."
+    "cancel": "Hủy"
   },
-  "confirmPasswordCode": {
-    "title": "Xác thực mã xác thực",
-    "passwordCode": "Mã xác thực",
-    "submit": "Xác thực"
-  },
-  "forgotPassword": {
-    "title": "Quên mật khẩu",
-    "email": "E-mail",
-    "submit": "Gửi yêu cầu"
-  },
-  "login": {
-    "title": "Đăng nhập",
-    "email" :"E-mail",
-    "password": "Mật khẩu"
-  } 
+  "common": {
+    "required": "Trường này là bắt buộc",
+    "invalidEmail": "Email không đúng định dạng",
+    "passwordTooShort": "Mật khẩu phải ít nhất 6 ký tự",
+    "invalidPhone": "Số điện thoại không hợp lệ",
+    "passwordMismatch": "Mật khẩu xác nhận không khớp"
+  }
 }

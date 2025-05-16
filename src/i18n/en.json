@@ -1,62 +1,76 @@
 ﻿{
+  "login": {
+    "title": "Login",
+    "email": "Email",
+    "password": "Password",
+    "button": "Login",
+    "forgot": "Forgot password?"
+  },
   "register": {
-    "title": "User Registration",
-    "userName": "Username",
-    "email": "E-mail",
-    "fullName": "Full Name",
-    "dob": "Date of Birth",
-    "gender": "Gender",
-    "male": "Male",
-    "female": "Female",
-    "role": "Account Type",
-    "admin": "Administrator",
-    "staff": "Staff",
-    "phoneNumber": "Phone Number",
+    "title": "Register",
+    "email": "Email",
     "password": "Password",
     "passwordConfirm": "Confirm Password",
-    "submit": "Register",
-    "success": "I0001: Registration successful!",
-    "error": "I0002: Registration failed!"
-  },
-  "userEdit": {
-    "title": "Edit User",
-    "userName": "User Name",
-    "email": "Email",
+    "userName": "Username",
     "fullName": "Full Name",
     "dob": "Date of Birth",
-    "gender": "Gender",
     "phoneNumber": "Phone Number",
-    "description": "Description",
-    "role": "Role",
+    "gender": "Gender",
     "male": "Male",
     "female": "Female",
-    "admin": "Administrator",
-    "staff": "Staff",
-    "save": "Save"
-  },
-  "userList": {
-    "title": "User List",
-    "userName": "User Name",
-    "fullName": "Full Name",
     "role": "Role",
-    "dob": "Date of Birth",
-    "actions": "Actions",
-    "edit": "Edit",
-    "delete": "Delete",
-    "confirmDelete": "Are you sure you want to delete this user?",
-    "search": "Search",
-    "confirm": "Confirm",
-    "cancel": "Cancel"
+    "admin": "Admin",
+    "staff": "Staff",
+    "submit": "Register"
   },
   "confirmPasswordCode": {
-    "title": "Confirm Password Code",
-    "passwordCode": "Password Code",
-    "submit": "Submit"
+    "title": "Confirm Code",
+    "passwordCode": "Verification Code",
+    "submit": "Confirm",
+    "required": "Verification code is required",
+    "invalidLength": "Code must be 4 characters"
   },
   "forgotPassword": {
     "title": "Forgot Password",
-    "email": "E-mail",
-    "submit": "Submit"
+    "submit": "Send request"
+  },
+  "userEdit": {
+    "title": "Edit User",
+    "fullName": "Full Name",
+    "dob": "Date of Birth",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "phoneNumber": "Phone Number",
+    "description": "Description",
+    "role": "Role",
+    "admin": "Admin",
+    "staff": "Staff",
+    "save": "Save",
+    "requiredDob": "Date of birth is required",
+    "requiredGender": "Gender is required",
+    "requiredRole": "Role is required",
+    "descriptionRequired": "Description is required"
+  },
+  "userList": {
+    "title": "User List",
+    "userName": "Username",
+    "fullName": "Full Name",
+    "dob": "Date of Birth",
+    "role": "Role",
+    "search": "Search",
+    "edit": "Edit",
+    "delete": "Delete",
+    "actions": "Actions",
+    "confirmDelete": "Are you sure you want to delete this user?",
+    "confirm": "Yes",
+    "cancel": "Cancel"
+  },
+  "common": {
+    "required": "This field is required",
+    "invalidEmail": "Invalid email format",
+    "passwordTooShort": "Password must be at least 6 characters",
+    "invalidPhone": "Invalid phone number",
+    "passwordMismatch": "Passwords do not match"
   }
-
 }
