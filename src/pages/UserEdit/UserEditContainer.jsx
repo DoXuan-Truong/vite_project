@@ -21,7 +21,15 @@ const UserEditContainer = () => {
 
     const form = useForm({
         resolver: yupResolver(userSchema(t)),
-        mode: 'onChange'
+        mode: 'onChange',
+        defaultValues: {
+            fullName: '',
+            dob: '',
+            gender: '',
+            role: '',
+            phoneNumber: '',
+            description: '',
+        }
     });
 
     useEffect(() => {
@@ -78,7 +86,7 @@ const UserEditContainer = () => {
             avatar={avatar}
             preview={preview}
             onSubmit={onSubmit}
-            handleAvatarChange={handleAvatarChange}
+            onAvatarChange={handleAvatarChange}
         />
     );
 };

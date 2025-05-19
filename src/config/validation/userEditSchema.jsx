@@ -8,6 +8,7 @@ const userEditSchema = (t) => yup.object({
     gender: yup.number().oneOf([1, 2]).required(t('register.requiredGender')),
     role: yup.number().oneOf([1, 2]).required(t('register.requiredRole')),
     phoneNumber: phoneRule(t),
+    description: requiredString(t, 'register.description'),
     password: passwordRule(t),
     passwordConfirm: yup.string().oneOf([yup.ref('password')], t('register.passwordMismatch')).required(t('register.requiredConfirm')),
 });

@@ -42,7 +42,7 @@ export const updateUser = async (userId, data, avatar) => {
     });
 
     if (avatar) {
-        formData.append('file', avatar);
+        formData.append('avatar', avatar);
     }
 
     const response = await axiosInstance.post('/users/update', formData, {

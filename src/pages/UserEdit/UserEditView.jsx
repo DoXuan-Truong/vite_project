@@ -1,15 +1,58 @@
 import React from 'react';
-import { Box, Button, MenuItem, TextField, Typography } from '@mui/material';
+import {
+    Box,
+    Button,
+    MenuItem,
+    TextField,
+    Typography,
+    Avatar
+} from '@mui/material';
 import { Controller } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 
-const UserEditView = ({ form, onSubmit, onAvatarChange }) => {
+const UserEditView = ({
+                          form,
+                          onSubmit,
+                          preview,
+                          avatar,
+                          onAvatarChange
+                      }) => {
     const { control, handleSubmit } = form;
     const { t } = useTranslation();
 
     return (
-        <Box component="form" onSubmit={handleSubmit(onSubmit)} sx={{ maxWidth: 500, mx: 'auto', mt: 4 }}>
-            <Typography variant="h5" gutterBottom>{t('userEdit.title')}</Typography>
+        <Box
+            component="form"
+            onSubmit={handleSubmit(onSubmit)}
+            sx={{ maxWidth: 500, mx: 'auto', mt: 4 }}
+        >
+            <Typography variant="h5" gutterBottom>
+                {t('userEdit.title')}
+            </Typography>
+
+            {/* Avatar Preview */}
+            {preview && (
+                <Box display="flex" justifyContent="center" mb={2}>
+                    <Avatar
+                        alt="Avatar"
+                        src={preview}
+                        sx={{ width: 100, height: 100, borderRadius: '50%' }}
+                    />
+                </Box>
+            )}
+
+            {/* File Input */}
+            <input
+                type="file"
+                accept="image/*"
+                onChange={(e) => onAvatarChange(e)}
+                style={{ marginBottom: 16 }}
+            />
+            {avatar && (
+                <Typography variant="body2" mb={2}>
+                    {avatar.name}
+                </Typography>
+            )}
 
             <Controller
                 name="fullName"
@@ -105,13 +148,13 @@ const UserEditView = ({ form, onSubmit, onAvatarChange }) => {
                         label={t('userEdit.description')}
                         fullWidth
                         margin="normal"
+                        multiline
+                        rows={4}
                         error={!!fieldState.error}
                         helperText={fieldState.error?.message}
                     />
                 )}
             />
-
-            <input type="file" onChange={(e) => onAvatarChange(e.target.files[0])} style={{ marginTop: 16 }} />
 
             <Button type="submit" variant="contained" fullWidth sx={{ mt: 3 }}>
                 {t('userEdit.save')}
