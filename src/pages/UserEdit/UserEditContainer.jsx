@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import { useForm } from 'react-hook-form';
+import React, {useState, useEffect} from 'react';
+import {useParams, useNavigate} from 'react-router-dom';
+import {useTranslation} from 'react-i18next';
+import {useForm} from 'react-hook-form';
 // import { userDetail, userUpdate } from '../../api/api';
 import UserEditView from './UserEditView';
 import {yupResolver} from "@hookform/resolvers/yup";
@@ -11,8 +11,8 @@ import {getUserDetail, updateUser} from "../../services/userService.jsx";
 // import userEditSchema from '../../config/validation/userEditSchema';
 
 const UserEditContainer = () => {
-    const { t } = useTranslation();
-    const { userId } = useParams();
+    const {t} = useTranslation();
+    const {userId} = useParams();
     const navigate = useNavigate();
     const [user, setUser] = useState(null);
     const [error, setError] = useState(null);
